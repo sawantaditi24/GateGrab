@@ -18,6 +18,7 @@ router = APIRouter()
 SEED_SECRET = os.getenv("SEED_SECRET", "seed-me-please")
 
 
+@router.get("/seed")
 @router.post("/seed")
 async def seed_database(secret: str = None):
     """
@@ -26,7 +27,7 @@ async def seed_database(secret: str = None):
     
     Usage: 
     - Browser: https://your-api.onrender.com/api/admin/seed?secret=seed-me-please
-    - curl: curl -X POST "https://your-api.onrender.com/api/admin/seed?secret=seed-me-please"
+    - curl: curl "https://your-api.onrender.com/api/admin/seed?secret=seed-me-please"
     """
     # Verify secret (basic protection)
     if secret != SEED_SECRET:
