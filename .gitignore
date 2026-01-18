@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# Node
+node_modules/
+dist/
+build/
+*.log
+
+# Environment variables
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Documentation (exclude all .md files except README.md)
+PROJECT_SCOPE.md
+WORKFLOW.md
+FRONTEND_SUMMARY.md
+frontend/TAILWIND_FIX.md
+backend/README.md
+frontend/README.md
+
+
+
