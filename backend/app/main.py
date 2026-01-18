@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.routers import airports, restaurants, orders, websocket, agents
+from app.routers import airports, restaurants, orders, websocket, agents, admin
 from app.database import engine, Base
 import os
 from dotenv import load_dotenv
@@ -43,6 +43,7 @@ app.include_router(restaurants.router, prefix="/api/restaurants", tags=["restaur
 app.include_router(orders.router, prefix="/api/orders", tags=["orders"])
 app.include_router(agents.router, prefix="/api/agents", tags=["agents"])
 app.include_router(websocket.router, prefix="/ws", tags=["websocket"])
+app.include_router(admin.router, prefix="/api/admin", tags=["admin"])
 
 
 @app.get("/")
