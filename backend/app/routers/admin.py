@@ -49,12 +49,6 @@ async def seed_database(secret: str = None):
                 "agents": db.query(DeliveryAgent).count()
             }
         
-        # Import and execute seed logic
-        # We'll inline the seed logic here to avoid import issues
-        from app.models.airport import Airport, Terminal, Gate
-        from app.models.restaurant import Restaurant
-        from app.models.delivery_agent import DeliveryAgent
-        
         # JFK Airport
         jfk = Airport(
             code="JFK", name="John F. Kennedy International Airport",
