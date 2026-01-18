@@ -2,6 +2,10 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.routers import airports, restaurants, orders, websocket, agents
 from app.database import engine, Base
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Create database tables
 Base.metadata.create_all(bind=engine)
@@ -12,10 +16,22 @@ app = FastAPI(
     version="1.0.0"
 )
 
+# CORS configuration - allow frontend URL from environment or default to localhost
+frontend_url = os.getenv("FRONTEND_URL", "http://localhost:5173")
+allowed_origins = [
+    frontend_url,
+    "http://localhost:5173",
+    "http://localhost:3000",
+]
+
+# Add production frontend URL if provided
+if os.getenv("FRONTEND_URL"):
+    allowed_origins.append(os.getenv("FRONTEND_URL"))
+
 # CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:3000"],  # Vite default port
+    allow_origins=allowed_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
