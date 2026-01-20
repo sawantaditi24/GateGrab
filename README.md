@@ -15,6 +15,8 @@ For airport restaurants, this means lost revenue from travelers who would have o
 
 GateGrab is a delivery coordination platform that connects hungry travelers with airport restaurants and delivery agents. Travelers can browse nearby restaurants based on their terminal and gate location, place orders through the restaurant's system, and have their food delivered directly to their boarding gate - all while tracking their order in real-time.
 
+Demo link: https://gate-grab.vercel.app/
+
 ### Key Benefits
 
 **For Travelers:**
