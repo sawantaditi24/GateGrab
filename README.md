@@ -33,17 +33,44 @@ GateGrab is a delivery coordination platform that connects hungry travelers with
 - Better utilization of existing restaurant infrastructure
 - Enhanced airport experience
 
+<img width="1710" height="1107" alt="Screenshot 2026-01-19 at 9 11 22 PM" src="https://github.com/user-attachments/assets/a18a2ada-5f8f-4c68-8bdc-ae8f0939a93e" />
+
+
 ## Features
 
 ### Core Functionality
 
 - **Multi-Airport Support**: Currently supports 8 major US airports (JFK, LAX, ATL, ORD, DFW, SFO, MIA, DEN) with terminal and gate layouts
+
 - **Smart Restaurant Discovery**: Find restaurants near your boarding gate with distance calculations
+
+<img width="1710" height="1078" alt="Screenshot 2026-01-19 at 9 11 51 PM" src="https://github.com/user-attachments/assets/bdff3246-7687-4b02-bb4a-8ad41949bce7" />
+
+
 - **Seamless Ordering Flow**: Browse restaurant menus, add items to cart, and complete checkout
+
+<img width="1710" height="1107" alt="Screenshot 2026-01-19 at 9 12 01 PM" src="https://github.com/user-attachments/assets/bc818ca0-4369-4147-ae81-1e06d504d5f5" />
+
+
 - **Delivery Coordination**: Enter your gate details, contact information, and order confirmation to coordinate delivery
+
+<img width="1710" height="1073" alt="Screenshot 2026-01-19 at 9 13 32 PM" src="https://github.com/user-attachments/assets/85608794-1707-48c2-8c48-0829805da67f" />
+
+
 - **Real-time Order Tracking**: Live status updates via WebSocket connection showing order progress
+
+<img width="1710" height="1078" alt="Screenshot 2026-01-19 at 9 13 52 PM" src="https://github.com/user-attachments/assets/1291edff-37f8-4949-a0f4-d768b374dc7b" />
+
+
 - **Delivery Agent Portal**: Dedicated interface for delivery agents to manage orders and update status
+
+<img width="1710" height="1072" alt="Screenshot 2026-01-19 at 9 14 04 PM" src="https://github.com/user-attachments/assets/3d841fc8-4785-488c-abdb-4836ac7f3711" />
+
+
 - **Secure Delivery Verification**: OTP-based confirmation system to ensure orders reach the right person
+
+<img width="1710" height="1076" alt="Screenshot 2026-01-19 at 9 14 37 PM" src="https://github.com/user-attachments/assets/9e86b534-4efb-4c33-93ce-6411a40d944b" />
+
 
 ### Technical Features
 
